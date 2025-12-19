@@ -1,0 +1,8 @@
+---
+- name: Configure Tomcat
+  hosts: java_servers
+  become: true
+  become_method: sudo
+
+  roles:
+    - tomcat
